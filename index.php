@@ -102,9 +102,8 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
 
     .navbar {
       position: relative;
-      height: 70px;
+      height: 80px;
       background: var(--white);
-      border-bottom: 1px solid var(--gray5);
       display: grid;
       grid-template-columns: 1fr auto;
       align-items: center;
@@ -126,7 +125,7 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
     }
 
     .navbar-logo img {
-      height: 42px;
+      height: 30px;
       width: auto
     }
 
@@ -140,11 +139,11 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
     }
 
     .navbar-badge-text {
-      font-size: .875rem;
-      font-weight: 600;
-      color: var(--gray2);
-      letter-spacing: .01em;
-    }
+    font-size: 0.975rem;
+    font-weight: 100;
+    color: var(--gray2);
+    letter-spacing: 0.04em;
+}
 
     /* Right controls */
     .navbar-right {
@@ -1153,6 +1152,8 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
 
 <body>
 
+
+   
   <!-- ── NAVBAR ── -->
   <nav class="navbar">
     <div class="navbar-left">
@@ -1179,6 +1180,8 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
   </nav>
 
 
+
+
   <!-- ── HERO ── -->
   <section class="hero">
 
@@ -1194,7 +1197,7 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
             </div>
             <h2 data-i18n="partner_success_title">Request sent!</h2>
             <p data-i18n="partner_success_desc">Our team will contact you within 24–48 hours to finalize your registration.</p>
-            <a href="index.html" class="btn-back" data-i18n="partner_back_home">Back to Home</a>
+            <a href="index.php" class="btn-back" data-i18n="partner_back_home">Back to Home</a>
           </div>
         <?php else: ?>
 
@@ -1209,7 +1212,7 @@ $types  = ['Restaurant', 'Café / Snack', 'Supermarché', 'Pharmacie', 'Boutique
             </div>
           <?php endif; ?>
 
-          <form method="POST" action="partner.php" novalidate>
+          <form method="POST" action="index.php" novalidate>
 
             <!-- Business Type -->
             <div class="field">
